@@ -1,0 +1,39 @@
+{% extends 'private/base.html' %}
+
+{% block body %}
+<div class="container">
+  <h1>All Tasks</h1>
+  <div class="container scroll">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Task Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Important</th>
+          <th scope="col">Urgent</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for task in data %}
+        <tr>
+          <td>{{loop.index}}</td>
+          <th scope="row">{{task.task}}</th>
+          <td>{{task.desc}}</td>
+          <td>{{task.imp}}</td>
+          <td>{{task.urg}}</td>
+          <td>
+            <a href="edit_task/{{task.id}}">
+              <button type="button" class="btn btn-outline-dark">Edit</button>
+            </a>
+            <a href="delete_task/{{task.id}}">
+              <button type="button" class="btn btn-outline-danger">Delete</button>
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endblock body %}

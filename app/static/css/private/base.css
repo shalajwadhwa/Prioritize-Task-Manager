@@ -1,0 +1,18 @@
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.dropdown-toggle { outline: 0; }
+
+.nav-flush .nav-link {
+  border-radius: 0;
+}

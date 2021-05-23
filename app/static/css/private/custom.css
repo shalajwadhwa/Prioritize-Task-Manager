@@ -1,0 +1,10 @@
+.content {
+    padding-left: 72px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.scroll {
+    overflow: auto;
+    height: 100%;
+}
