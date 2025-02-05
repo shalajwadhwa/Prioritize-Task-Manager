@@ -1,6 +1,6 @@
 # Prioritize Task Manager
 Easily organize Tasks using Prioritize.  
-[Try Out Prioritize](https://prioritize-task-manager.herokuapp.com/)
+[Try Out Prioritize](https://shalajwadhwa.eu.pythonanywhere.com)
 
 ## Table of Contents
 * [General Info](#general-info)
